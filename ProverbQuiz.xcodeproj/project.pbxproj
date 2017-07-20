@@ -38,6 +38,9 @@
 		9318E3CA1F2077EE0083632B /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9318E3B01F2077EE0083632B /* iTunesArtwork@1x.png */; };
 		9318E3CB1F2077EE0083632B /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9318E3B11F2077EE0083632B /* iTunesArtwork@2x.png */; };
 		9318E3CC1F2077EE0083632B /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9318E3B21F2077EE0083632B /* iTunesArtwork@3x.png */; };
+		9318E3CF1F207C430083632B /* ni-che.png in Resources */ = {isa = PBXBuildFile; fileRef = 9318E3CE1F207C430083632B /* ni-che.png */; };
+		9318E3D11F2082FB0083632B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D01F2082FB0083632B /* QuizViewController.swift */; };
+		9318E3D31F2083100083632B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D21F2083100083632B /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		9318E3B01F2077EE0083632B /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
 		9318E3B11F2077EE0083632B /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		9318E3B21F2077EE0083632B /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		9318E3CE1F207C430083632B /* ni-che.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ni-che.png"; sourceTree = "<group>"; };
+		9318E3D01F2082FB0083632B /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		9318E3D21F2083100083632B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		9318E3841F2077850083632B /* ProverbQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				9318E3CD1F207C280083632B /* images */,
 				9318E3971F2077EE0083632B /* icons */,
 				9318E3851F2077850083632B /* AppDelegate.swift */,
 				9318E3871F2077850083632B /* ViewController.swift */,
@@ -113,6 +120,8 @@
 				9318E38C1F2077850083632B /* Assets.xcassets */,
 				9318E38E1F2077850083632B /* LaunchScreen.storyboard */,
 				9318E3911F2077850083632B /* Info.plist */,
+				9318E3D01F2082FB0083632B /* QuizViewController.swift */,
+				9318E3D21F2083100083632B /* ResultViewController.swift */,
 			);
 			path = ProverbQuiz;
 			sourceTree = "<group>";
@@ -157,6 +166,14 @@
 				9318E3AF1F2077EE0083632B /* Icon-Small-50x50@2x.png */,
 			);
 			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		9318E3CD1F207C280083632B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9318E3CE1F207C430083632B /* ni-che.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +245,7 @@
 				9318E3BC1F2077EE0083632B /* Icon-App-40x40@3x.png in Resources */,
 				9318E3B61F2077EE0083632B /* Icon-App-20x20@3x.png in Resources */,
 				9318E3C01F2077EE0083632B /* Icon-App-60x60@2x.png in Resources */,
+				9318E3CF1F207C430083632B /* ni-che.png in Resources */,
 				9318E3B71F2077EE0083632B /* Icon-App-29x29@1x.png in Resources */,
 				9318E3B51F2077EE0083632B /* Icon-App-20x20@2x.png in Resources */,
 				9318E3BA1F2077EE0083632B /* Icon-App-40x40@1x.png in Resources */,
@@ -258,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9318E3D11F2082FB0083632B /* QuizViewController.swift in Sources */,
 				9318E3881F2077850083632B /* ViewController.swift in Sources */,
 				9318E3861F2077850083632B /* AppDelegate.swift in Sources */,
+				9318E3D31F2083100083632B /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
