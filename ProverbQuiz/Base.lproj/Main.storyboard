@@ -91,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="962" y="139"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--くいず-->
         <scene sceneID="Foz-nJ-hyP">
             <objects>
                 <viewController id="gam-WX-1ED" customClass="QuizViewController" customModule="ProverbQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,35 +103,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKq-xa-SUH">
-                                <rect key="frame" x="48" y="92" width="259" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="足下を掘れ、  そこに泉あり">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HiraMinProN-W6"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRe-7x-3zS">
                                 <rect key="frame" x="67" y="350" width="240" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="答え">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="HiraMinProN-W6"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectOption1" destination="gam-WX-1ED" eventType="touchUpInside" id="jA9-Nx-BfJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvc-RK-2eW">
                                 <rect key="frame" x="67" y="427" width="240" height="49"/>
@@ -139,15 +121,11 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="答え">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="HiraMinProN-W6"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectOption2" destination="gam-WX-1ED" eventType="touchUpInside" id="Q53-R7-hWC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9L6-LV-lsk">
                                 <rect key="frame" x="67" y="509" width="240" height="49"/>
@@ -155,20 +133,37 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="答え">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="HiraMinProN-W6"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectOption3" destination="gam-WX-1ED" eventType="touchUpInside" id="Sas-BJ-io9"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKq-xa-SUH">
+                                <rect key="frame" x="58" y="120" width="259" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="足下を掘れ、  そこに泉あり">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HiraMinProN-W6"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" title="くいず" id="vzD-AP-bER"/>
+                    <connections>
+                        <outlet property="option1Button" destination="mRe-7x-3zS" id="enT-uU-tPx"/>
+                        <outlet property="option2Button" destination="Hvc-RK-2eW" id="53B-Wd-KBc"/>
+                        <outlet property="option3Button" destination="9L6-LV-lsk" id="vvx-eg-hAb"/>
+                        <outlet property="quizTextView" destination="gKq-xa-SUH" id="zG0-fY-Y4P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dM-7k-khO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

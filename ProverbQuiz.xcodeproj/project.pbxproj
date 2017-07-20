@@ -41,6 +41,7 @@
 		9318E3CF1F207C430083632B /* ni-che.png in Resources */ = {isa = PBXBuildFile; fileRef = 9318E3CE1F207C430083632B /* ni-che.png */; };
 		9318E3D11F2082FB0083632B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D01F2082FB0083632B /* QuizViewController.swift */; };
 		9318E3D31F2083100083632B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D21F2083100083632B /* ResultViewController.swift */; };
+		9318E3D51F208AAE0083632B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D41F208AAE0083632B /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		9318E3CE1F207C430083632B /* ni-che.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ni-che.png"; sourceTree = "<group>"; };
 		9318E3D01F2082FB0083632B /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9318E3D21F2083100083632B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9318E3D41F208AAE0083632B /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				9318E3911F2077850083632B /* Info.plist */,
 				9318E3D01F2082FB0083632B /* QuizViewController.swift */,
 				9318E3D21F2083100083632B /* ResultViewController.swift */,
+				9318E3D41F208AAE0083632B /* Quiz.swift */,
 			);
 			path = ProverbQuiz;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9318E3D11F2082FB0083632B /* QuizViewController.swift in Sources */,
+				9318E3D51F208AAE0083632B /* Quiz.swift in Sources */,
 				9318E3881F2077850083632B /* ViewController.swift in Sources */,
 				9318E3861F2077850083632B /* AppDelegate.swift in Sources */,
 				9318E3D31F2083100083632B /* ResultViewController.swift in Sources */,
