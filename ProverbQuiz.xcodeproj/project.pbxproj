@@ -43,6 +43,13 @@
 		9318E3D31F2083100083632B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D21F2083100083632B /* ResultViewController.swift */; };
 		9318E3D51F208AAE0083632B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D41F208AAE0083632B /* Quiz.swift */; };
 		93B4765C1F2781430089253B /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4765B1F2781430089253B /* EndViewController.swift */; };
+		93B4765E1F2793C70089253B /* nigaoe_goethe.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B4765D1F2793C70089253B /* nigaoe_goethe.png */; };
+		93B476651F2793DF0089253B /* mozart.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B4765F1F2793DF0089253B /* mozart.png */; };
+		93B476661F2793DF0089253B /* nigaoe_hippocrates.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B476601F2793DF0089253B /* nigaoe_hippocrates.png */; };
+		93B476671F2793DF0089253B /* nigaoe_jung_yungu.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B476611F2793DF0089253B /* nigaoe_jung_yungu.png */; };
+		93B476681F2793DF0089253B /* nigaoe_shakespeare.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B476621F2793DF0089253B /* nigaoe_shakespeare.png */; };
+		93B476691F2793DF0089253B /* nigaoe_socrates.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B476631F2793DF0089253B /* nigaoe_socrates.png */; };
+		93B4766A1F2793DF0089253B /* nigaoe_sonbu.png in Resources */ = {isa = PBXBuildFile; fileRef = 93B476641F2793DF0089253B /* nigaoe_sonbu.png */; };
 		93E5EC771F26E0D700F7E008 /* alfred_adler.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */; };
 		93E5EC781F26E0D700F7E008 /* aristoteles.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC6F1F26E0D700F7E008 /* aristoteles.png */; };
 		93E5EC791F26E0D700F7E008 /* einstein.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC701F26E0D700F7E008 /* einstein.png */; };
@@ -94,6 +101,13 @@
 		9318E3D21F2083100083632B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		9318E3D41F208AAE0083632B /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		93B4765B1F2781430089253B /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		93B4765D1F2793C70089253B /* nigaoe_goethe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_goethe.png; sourceTree = "<group>"; };
+		93B4765F1F2793DF0089253B /* mozart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mozart.png; sourceTree = "<group>"; };
+		93B476601F2793DF0089253B /* nigaoe_hippocrates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_hippocrates.png; sourceTree = "<group>"; };
+		93B476611F2793DF0089253B /* nigaoe_jung_yungu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_jung_yungu.png; sourceTree = "<group>"; };
+		93B476621F2793DF0089253B /* nigaoe_shakespeare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_shakespeare.png; sourceTree = "<group>"; };
+		93B476631F2793DF0089253B /* nigaoe_socrates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_socrates.png; sourceTree = "<group>"; };
+		93B476641F2793DF0089253B /* nigaoe_sonbu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_sonbu.png; sourceTree = "<group>"; };
 		93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_adler.png; sourceTree = "<group>"; };
 		93E5EC6F1F26E0D700F7E008 /* aristoteles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aristoteles.png; sourceTree = "<group>"; };
 		93E5EC701F26E0D700F7E008 /* einstein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = einstein.png; sourceTree = "<group>"; };
@@ -197,6 +211,13 @@
 		9318E3CD1F207C280083632B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				93B4765F1F2793DF0089253B /* mozart.png */,
+				93B476601F2793DF0089253B /* nigaoe_hippocrates.png */,
+				93B476611F2793DF0089253B /* nigaoe_jung_yungu.png */,
+				93B476621F2793DF0089253B /* nigaoe_shakespeare.png */,
+				93B476631F2793DF0089253B /* nigaoe_socrates.png */,
+				93B476641F2793DF0089253B /* nigaoe_sonbu.png */,
+				93B4765D1F2793C70089253B /* nigaoe_goethe.png */,
 				93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */,
 				93E5EC6F1F26E0D700F7E008 /* aristoteles.png */,
 				93E5EC701F26E0D700F7E008 /* einstein.png */,
@@ -273,6 +294,7 @@
 			files = (
 				9318E3C21F2077EE0083632B /* Icon-App-72x72@1x.png in Resources */,
 				93E5EC7C1F26E0D700F7E008 /* ieyasu.png in Resources */,
+				93B4765E1F2793C70089253B /* nigaoe_goethe.png in Resources */,
 				9318E3901F2077850083632B /* LaunchScreen.storyboard in Resources */,
 				93E5EC771F26E0D700F7E008 /* alfred_adler.png in Resources */,
 				9318E3C41F2077EE0083632B /* Icon-App-76x76@1x.png in Resources */,
@@ -285,19 +307,25 @@
 				93E5EC7F1F26E0D700F7E008 /* shikoutei.png in Resources */,
 				9318E3C01F2077EE0083632B /* Icon-App-60x60@2x.png in Resources */,
 				9318E3CF1F207C430083632B /* ni-che.png in Resources */,
+				93B476691F2793DF0089253B /* nigaoe_socrates.png in Resources */,
 				93E5EC7E1F26E0D700F7E008 /* platon.png in Resources */,
 				9318E3B71F2077EE0083632B /* Icon-App-29x29@1x.png in Resources */,
 				9318E3B51F2077EE0083632B /* Icon-App-20x20@2x.png in Resources */,
 				9318E3BA1F2077EE0083632B /* Icon-App-40x40@1x.png in Resources */,
 				9318E3C11F2077EE0083632B /* Icon-App-60x60@3x.png in Resources */,
+				93B476671F2793DF0089253B /* nigaoe_jung_yungu.png in Resources */,
 				9318E3BB1F2077EE0083632B /* Icon-App-40x40@2x.png in Resources */,
 				93E5EC791F26E0D700F7E008 /* einstein.png in Resources */,
+				93B476681F2793DF0089253B /* nigaoe_shakespeare.png in Resources */,
 				9318E3C31F2077EE0083632B /* Icon-App-72x72@2x.png in Resources */,
+				93B4766A1F2793DF0089253B /* nigaoe_sonbu.png in Resources */,
 				93E5EC781F26E0D700F7E008 /* aristoteles.png in Resources */,
 				9318E3BF1F2077EE0083632B /* Icon-App-60x60@1x.png in Resources */,
 				9318E3C61F2077EE0083632B /* Icon-App-76x76@3x.png in Resources */,
 				9318E3B91F2077EE0083632B /* Icon-App-29x29@3x.png in Resources */,
+				93B476651F2793DF0089253B /* mozart.png in Resources */,
 				9318E3C51F2077EE0083632B /* Icon-App-76x76@2x.png in Resources */,
+				93B476661F2793DF0089253B /* nigaoe_hippocrates.png in Resources */,
 				9318E3C91F2077EE0083632B /* Icon-Small-50x50@2x.png in Resources */,
 				93E5EC7A1F26E0D700F7E008 /* gandhi.png in Resources */,
 				9318E38B1F2077850083632B /* Main.storyboard in Resources */,
