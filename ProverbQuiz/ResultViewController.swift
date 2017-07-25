@@ -11,20 +11,9 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var status: Bool!
+    var imageName: String!
     var proverb: String!
     var author:  String!
-    
-    var authors = [["name": "ニーチェ", "image": "ni-che"],
-                   ["name": "アリストテレス", "image": "aristoteles"],
-                   ["name": "プラトン", "image": "platon"],
-                   ["name": "アドラー", "image": "alfred_adler"],
-                   ["name": "始皇帝", "image": "shikoutei"],
-                   ["name": "徳川家康", "image": "ieyasu"],
-                   ["name": "諸葛亮", "image": "koumei"],
-                   ["name": "ガンジー", "image": "gandhi"],
-                   ["name": "アインシュタイン", "image": "einstein"],
-                   ["name": "ヘレン・ケラー", "image": "helen_keller"]]
-
     
     @IBOutlet var authorImageView: UIImageView!
     @IBOutlet var resultLavel: UILabel!
@@ -35,6 +24,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         print(status)
+        authorImageView.image = UIImage(named: imageName)
         proverbTextView.text = proverb
         authorLabel.text = author
         if (status) {

@@ -13,6 +13,17 @@ class QuizViewController: UIViewController {
     var quiz:   Quiz!
     var status: Bool!
     
+    var authors = [["name": "ニーチェ", "image": "ni-che", "proverb": "足元を掘れそこに泉あり。"],
+                   ["name": "アリストテレス", "image": "aristoteles", "proverb": "我々の性格は、我々の行動の結果なり。"],
+                   ["name": "プラトン", "image": "platon", "proverb": "自分に打ち勝つことが、最も偉大な勝利である。"],
+                   ["name": "アドラー", "image": "alfred_adler", "proverb": "もっとも重要な問いは「どこから」ではなくて「どこへ」である。"],
+                   ["name": "始皇帝", "image": "shikoutei", "proverb": "天下が戦に苦しむのは、諸侯があるからだ。"],
+                   ["name": "徳川家康", "image": "ieyasu", "proverb": "戦いでは強い者が勝つ。辛抱の強い者が。"],
+                   ["name": "諸葛亮", "image": "koumei", "proverb": "無欲でなければ志は立たず、穏やかでなければ道は遠い。"],
+                   ["name": "ガンジー", "image": "gandhi", "proverb": "速度を上げるばかりが、人生ではない。"],
+                   ["name": "アインシュタイン", "image": "einstein", "proverb": "天才とは努力する凡才のことである。"],
+                   ["name": "ヘレン・ケラー", "image": "helen_keller", "proverb": "人生はどちらかです。勇気をもって挑むか、棒にふるか。"]]
+
     @IBOutlet var quizTextView:  UITextView!
     @IBOutlet var option1Button: UIButton!
     @IBOutlet var option2Button: UIButton!
@@ -31,23 +42,22 @@ class QuizViewController: UIViewController {
     
     // クイズの初期設定
     func setUpQuiz() {
-        quiz = Quiz(text: "自分に打ち勝つことが、最も偉大な勝利である。",
-                    option1: "ニーチェ",
-                    option2: "プラトン",
-                    option3: "アリストテレス",
-                    answer: "プラトン")
+        quiz = Quiz(option1: authors[0],
+                    option2: authors[1],
+                    option3: authors[2],
+                    answer: authors[1])
         
-        quizTextView.text = quiz.text
-        option1Button.setTitle(quiz.option1, for: .normal)
+        quizTextView.text = quiz.answer["proverb"]
+        option1Button.setTitle(quiz.option1["name"], for: .normal)
         option1Button.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)
-        option2Button.setTitle(quiz.option2, for: .normal)
+        option2Button.setTitle(quiz.option2["name"], for: .normal)
         option2Button.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)
-        option3Button.setTitle(quiz.option3, for: .normal)
+        option3Button.setTitle(quiz.option3["name"], for: .normal)
         option3Button.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)
     }
     
     @IBAction func selectOption1() {
-        if option1Button.titleLabel?.text == quiz.answer {
+        if option1Button.titleLabel?.text == quiz.answer["name"] {
             status = true
         } else {
             status = false
@@ -57,7 +67,7 @@ class QuizViewController: UIViewController {
     }
 
     @IBAction func selectOption2() {
-        if option2Button.titleLabel?.text == quiz.answer {
+        if option2Button.titleLabel?.text == quiz.answer["name"] {
             status = true
         } else {
             status = false
@@ -67,7 +77,7 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func selectOption3() {
-        if option3Button.titleLabel?.text == quiz.answer {
+        if option3Button.titleLabel?.text == quiz.answer["name"] {
             status = true
         } else {
             status = false
@@ -79,8 +89,9 @@ class QuizViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController = segue.destination as! ResultViewController
         resultViewController.status = status
-        resultViewController.proverb = quiz.text
-        resultViewController.author  = quiz.answer
+        resultViewController.imageName = quiz.answer["image"]
+        resultViewController.proverb = quiz.answer["proverb"]
+        resultViewController.author  = quiz.answer["name"]
     }
     
 }

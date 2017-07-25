@@ -11,15 +11,14 @@ import UIKit
 class Quiz: NSObject {
 
     // クイズ1つの問題がどんな値を扱うか宣言
-    var text: String
-    var option1: String
-    var option2: String
-    var option3: String
-    var answer: String
+    var option1: Dictionary<String, String>
+    var option2: Dictionary<String, String>
+    var option3: Dictionary<String, String>
+    var answer: Dictionary<String, String>
     
     // Initializer(イニシャライザ) = 初期化処理
-    init(text: String, option1: String, option2: String, option3: String, answer: String) {
-        self.text = text
+    init(option1: Dictionary<String, String>, option2: Dictionary<String, String>, option3: Dictionary<String, String>, answer: Dictionary<String, String>) {
+        
         self.option1 = option1
         self.option2 = option2
         self.option3 = option3
