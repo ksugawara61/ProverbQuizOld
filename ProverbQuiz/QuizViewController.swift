@@ -10,6 +10,8 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    var index: Int!
+    var quizArray: [Quiz]!
     var quiz:   Quiz!
     var status: Bool!
     
@@ -43,7 +45,7 @@ class QuizViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        
+    
     // シャッフルするアルゴリズム(フィッシャー&イェーツ・アルゴリズム)
     func shuffle(array: [Dictionary<String, String>]) -> [Dictionary<String, String>] {
         var tmpArray = array
@@ -58,11 +60,12 @@ class QuizViewController: UIViewController {
 
     // クイズの初期設定
     func setUpQuiz() {
-        let shuffledAuthors = shuffle(array: authors)
+        /*let shuffledAuthors = shuffle(array: authors)
         quiz = Quiz(option1: shuffledAuthors[0],
                     option2: shuffledAuthors[1],
                     option3: shuffledAuthors[2],
-                    answer: shuffledAuthors[Int(arc4random_uniform(3))])
+                    answer: shuffledAuthors[Int(arc4random_uniform(3))])*/
+        quiz = quizArray[index]
         
         quizTextView.text = quiz.answer["proverb"]
         option1Button.setTitle(quiz.option1["name"], for: .normal)
@@ -105,6 +108,8 @@ class QuizViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController = segue.destination as! ResultViewController
+        resultViewController.index = index + 1
+        resultViewController.quizArray = quizArray
         resultViewController.status = status
         resultViewController.imageName = quiz.answer["image"]
         resultViewController.proverb = quiz.answer["proverb"]

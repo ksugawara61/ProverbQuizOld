@@ -51,6 +51,7 @@
 		93E5EC7D1F26E0D700F7E008 /* koumei.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC741F26E0D700F7E008 /* koumei.png */; };
 		93E5EC7E1F26E0D700F7E008 /* platon.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC751F26E0D700F7E008 /* platon.png */; };
 		93E5EC7F1F26E0D700F7E008 /* shikoutei.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC761F26E0D700F7E008 /* shikoutei.png */; };
+		93E5EC871F2735E600F7E008 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5EC861F2735E600F7E008 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		93E5EC741F26E0D700F7E008 /* koumei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koumei.png; sourceTree = "<group>"; };
 		93E5EC751F26E0D700F7E008 /* platon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platon.png; sourceTree = "<group>"; };
 		93E5EC761F26E0D700F7E008 /* shikoutei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shikoutei.png; sourceTree = "<group>"; };
+		93E5EC861F2735E600F7E008 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				9318E3D01F2082FB0083632B /* QuizViewController.swift */,
 				9318E3D21F2083100083632B /* ResultViewController.swift */,
 				9318E3D41F208AAE0083632B /* Quiz.swift */,
+				93E5EC861F2735E600F7E008 /* Constant.swift */,
 			);
 			path = ProverbQuiz;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				9318E3881F2077850083632B /* ViewController.swift in Sources */,
 				9318E3861F2077850083632B /* AppDelegate.swift in Sources */,
 				9318E3D31F2083100083632B /* ResultViewController.swift in Sources */,
+				93E5EC871F2735E600F7E008 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

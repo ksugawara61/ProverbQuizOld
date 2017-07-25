@@ -63,13 +63,16 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="gam-WX-1ED" kind="show" id="1Dw-fO-e0O"/>
+                                    <action selector="selectQuiz" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dgp-tT-NJM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="格言" id="jw8-Uz-j4J"/>
+                    <connections>
+                        <segue destination="gam-WX-1ED" kind="show" identifier="toQuiz" id="BVs-6i-xN5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="1784.8" y="138.98050974512745"/>
         </scene>
-        <!--Result View Controller-->
+        <!--くいず-->
         <scene sceneID="TxB-2I-R83">
             <objects>
                 <viewController id="Mgn-tM-GFG" customClass="ResultViewController" customModule="ProverbQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,25 +228,20 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="もう一回">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="HiraMinProN-W6"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
-                                    <action selector="back" destination="Mgn-tM-GFG" eventType="touchUpInside" id="CvM-d2-I5N"/>
+                                    <action selector="nextQuiz" destination="Mgn-tM-GFG" eventType="touchUpInside" id="p2s-KD-a9C"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" title="くいず" id="2TF-9j-L43"/>
                     <connections>
                         <outlet property="authorImageView" destination="QPx-GS-Mcf" id="uqh-kF-vVH"/>
                         <outlet property="authorLabel" destination="GpC-lT-y6X" id="F7j-xH-mmZ"/>
+                        <outlet property="nextQuizButton" destination="tq4-eQ-Tns" id="M66-v4-ERl"/>
                         <outlet property="proverbTextView" destination="oD5-Lf-Wz3" id="HEz-0K-yyL"/>
                         <outlet property="resultLavel" destination="Itt-Vf-LCa" id="xxP-se-ode"/>
                         <segue destination="gam-WX-1ED" kind="show" identifier="toNext" id="uAq-lR-nEe"/>
