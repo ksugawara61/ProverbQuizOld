@@ -163,6 +163,7 @@
                         <outlet property="option2Button" destination="Hvc-RK-2eW" id="53B-Wd-KBc"/>
                         <outlet property="option3Button" destination="9L6-LV-lsk" id="vvx-eg-hAb"/>
                         <outlet property="quizTextView" destination="gKq-xa-SUH" id="zG0-fY-Y4P"/>
+                        <segue destination="Mgn-tM-GFG" kind="show" identifier="toDetail" id="FbB-i6-8ng"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dM-7k-khO" userLabel="First Responder" sceneMemberID="firstResponder"/>

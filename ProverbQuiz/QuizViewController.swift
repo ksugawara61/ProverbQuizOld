@@ -52,7 +52,8 @@ class QuizViewController: UIViewController {
         } else {
             status = false
         }
-        print(status)
+        
+        self.performSegue(withIdentifier: "toDetail", sender: nil)
     }
 
     @IBAction func selectOption2() {
@@ -61,7 +62,8 @@ class QuizViewController: UIViewController {
         } else {
             status = false
         }
-        print(status)
+        
+        self.performSegue(withIdentifier: "toDetail", sender: nil)
     }
     
     @IBAction func selectOption3() {
@@ -70,7 +72,13 @@ class QuizViewController: UIViewController {
         } else {
             status = false
         }
-        print(status)
+        
+        self.performSegue(withIdentifier: "toDetail", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController = segue.destination as! ResultViewController
+        resultViewController.status = status
     }
     
 }
