@@ -225,6 +225,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="authorImageView" destination="QPx-GS-Mcf" id="uqh-kF-vVH"/>
+                        <outlet property="proverbTextView" destination="oD5-Lf-Wz3" id="HEz-0K-yyL"/>
+                        <outlet property="resultLavel" destination="Itt-Vf-LCa" id="xxP-se-ode"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6N-z3-6LO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

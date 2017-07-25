@@ -42,6 +42,15 @@
 		9318E3D11F2082FB0083632B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D01F2082FB0083632B /* QuizViewController.swift */; };
 		9318E3D31F2083100083632B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D21F2083100083632B /* ResultViewController.swift */; };
 		9318E3D51F208AAE0083632B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D41F208AAE0083632B /* Quiz.swift */; };
+		93E5EC771F26E0D700F7E008 /* alfred_adler.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */; };
+		93E5EC781F26E0D700F7E008 /* aristoteles.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC6F1F26E0D700F7E008 /* aristoteles.png */; };
+		93E5EC791F26E0D700F7E008 /* einstein.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC701F26E0D700F7E008 /* einstein.png */; };
+		93E5EC7A1F26E0D700F7E008 /* gandhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC711F26E0D700F7E008 /* gandhi.png */; };
+		93E5EC7B1F26E0D700F7E008 /* helen_keller.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC721F26E0D700F7E008 /* helen_keller.png */; };
+		93E5EC7C1F26E0D700F7E008 /* ieyasu.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC731F26E0D700F7E008 /* ieyasu.png */; };
+		93E5EC7D1F26E0D700F7E008 /* koumei.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC741F26E0D700F7E008 /* koumei.png */; };
+		93E5EC7E1F26E0D700F7E008 /* platon.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC751F26E0D700F7E008 /* platon.png */; };
+		93E5EC7F1F26E0D700F7E008 /* shikoutei.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC761F26E0D700F7E008 /* shikoutei.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +91,15 @@
 		9318E3D01F2082FB0083632B /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9318E3D21F2083100083632B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		9318E3D41F208AAE0083632B /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_adler.png; sourceTree = "<group>"; };
+		93E5EC6F1F26E0D700F7E008 /* aristoteles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aristoteles.png; sourceTree = "<group>"; };
+		93E5EC701F26E0D700F7E008 /* einstein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = einstein.png; sourceTree = "<group>"; };
+		93E5EC711F26E0D700F7E008 /* gandhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gandhi.png; sourceTree = "<group>"; };
+		93E5EC721F26E0D700F7E008 /* helen_keller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helen_keller.png; sourceTree = "<group>"; };
+		93E5EC731F26E0D700F7E008 /* ieyasu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ieyasu.png; sourceTree = "<group>"; };
+		93E5EC741F26E0D700F7E008 /* koumei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koumei.png; sourceTree = "<group>"; };
+		93E5EC751F26E0D700F7E008 /* platon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platon.png; sourceTree = "<group>"; };
+		93E5EC761F26E0D700F7E008 /* shikoutei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shikoutei.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +191,15 @@
 		9318E3CD1F207C280083632B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */,
+				93E5EC6F1F26E0D700F7E008 /* aristoteles.png */,
+				93E5EC701F26E0D700F7E008 /* einstein.png */,
+				93E5EC711F26E0D700F7E008 /* gandhi.png */,
+				93E5EC721F26E0D700F7E008 /* helen_keller.png */,
+				93E5EC731F26E0D700F7E008 /* ieyasu.png */,
+				93E5EC741F26E0D700F7E008 /* koumei.png */,
+				93E5EC751F26E0D700F7E008 /* platon.png */,
+				93E5EC761F26E0D700F7E008 /* shikoutei.png */,
 				9318E3CE1F207C430083632B /* ni-che.png */,
 			);
 			path = images;
@@ -239,26 +266,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				9318E3C21F2077EE0083632B /* Icon-App-72x72@1x.png in Resources */,
+				93E5EC7C1F26E0D700F7E008 /* ieyasu.png in Resources */,
 				9318E3901F2077850083632B /* LaunchScreen.storyboard in Resources */,
+				93E5EC771F26E0D700F7E008 /* alfred_adler.png in Resources */,
 				9318E3C41F2077EE0083632B /* Icon-App-76x76@1x.png in Resources */,
 				9318E38D1F2077850083632B /* Assets.xcassets in Resources */,
 				9318E3BE1F2077EE0083632B /* Icon-App-57x57@2x.png in Resources */,
 				9318E3CC1F2077EE0083632B /* iTunesArtwork@3x.png in Resources */,
+				93E5EC7B1F26E0D700F7E008 /* helen_keller.png in Resources */,
 				9318E3BC1F2077EE0083632B /* Icon-App-40x40@3x.png in Resources */,
 				9318E3B61F2077EE0083632B /* Icon-App-20x20@3x.png in Resources */,
+				93E5EC7F1F26E0D700F7E008 /* shikoutei.png in Resources */,
 				9318E3C01F2077EE0083632B /* Icon-App-60x60@2x.png in Resources */,
 				9318E3CF1F207C430083632B /* ni-che.png in Resources */,
+				93E5EC7E1F26E0D700F7E008 /* platon.png in Resources */,
 				9318E3B71F2077EE0083632B /* Icon-App-29x29@1x.png in Resources */,
 				9318E3B51F2077EE0083632B /* Icon-App-20x20@2x.png in Resources */,
 				9318E3BA1F2077EE0083632B /* Icon-App-40x40@1x.png in Resources */,
 				9318E3C11F2077EE0083632B /* Icon-App-60x60@3x.png in Resources */,
 				9318E3BB1F2077EE0083632B /* Icon-App-40x40@2x.png in Resources */,
+				93E5EC791F26E0D700F7E008 /* einstein.png in Resources */,
 				9318E3C31F2077EE0083632B /* Icon-App-72x72@2x.png in Resources */,
+				93E5EC781F26E0D700F7E008 /* aristoteles.png in Resources */,
 				9318E3BF1F2077EE0083632B /* Icon-App-60x60@1x.png in Resources */,
 				9318E3C61F2077EE0083632B /* Icon-App-76x76@3x.png in Resources */,
 				9318E3B91F2077EE0083632B /* Icon-App-29x29@3x.png in Resources */,
 				9318E3C51F2077EE0083632B /* Icon-App-76x76@2x.png in Resources */,
 				9318E3C91F2077EE0083632B /* Icon-Small-50x50@2x.png in Resources */,
+				93E5EC7A1F26E0D700F7E008 /* gandhi.png in Resources */,
 				9318E38B1F2077850083632B /* Main.storyboard in Resources */,
 				9318E3C81F2077EE0083632B /* Icon-Small-50x50@1x.png in Resources */,
 				9318E3B41F2077EE0083632B /* Icon-App-20x20@1x.png in Resources */,
@@ -266,6 +301,7 @@
 				9318E3CB1F2077EE0083632B /* iTunesArtwork@2x.png in Resources */,
 				9318E3B31F2077EE0083632B /* Contents.json in Resources */,
 				9318E3B81F2077EE0083632B /* Icon-App-29x29@2x.png in Resources */,
+				93E5EC7D1F26E0D700F7E008 /* koumei.png in Resources */,
 				9318E3C71F2077EE0083632B /* Icon-App-83.5x83.5@2x.png in Resources */,
 				9318E3BD1F2077EE0083632B /* Icon-App-57x57@1x.png in Resources */,
 			);

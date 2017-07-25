@@ -11,11 +11,21 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var status: Bool!
+    
+    @IBOutlet var authorImageView: UIImageView!
+    @IBOutlet var resultLavel: UILabel!
+    @IBOutlet var proverbTextView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print(status)
+        if (status) {
+            resultLavel.text = "正解！"
+        } else {
+            resultLavel.text = "残念..."
+            resultLavel.textColor = UIColor.red
+        }
     }
 
     override func didReceiveMemoryWarning() {
