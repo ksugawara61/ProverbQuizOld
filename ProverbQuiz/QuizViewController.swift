@@ -13,7 +13,7 @@ class QuizViewController: UIViewController {
     var quiz:   Quiz!
     var status: Bool!
     
-    var authors = [["name": "ニーチェ", "image": "ni-che", "proverb": "足元を掘れそこに泉あり。"],
+    var authors = [["name": "ニーチェ", "image": "ni-che", "proverb": "自分を破壊する一歩手前の負荷が、自分を強くしてくれる。"],
                    ["name": "アリストテレス", "image": "aristoteles", "proverb": "我々の性格は、我々の行動の結果なり。"],
                    ["name": "プラトン", "image": "platon", "proverb": "自分に打ち勝つことが、最も偉大な勝利である。"],
                    ["name": "アドラー", "image": "alfred_adler", "proverb": "もっとも重要な問いは「どこから」ではなくて「どこへ」である。"],
