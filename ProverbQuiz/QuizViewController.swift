@@ -79,6 +79,8 @@ class QuizViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController = segue.destination as! ResultViewController
         resultViewController.status = status
+        resultViewController.proverb = quiz.text
+        resultViewController.author  = quiz.answer
     }
     
 }
