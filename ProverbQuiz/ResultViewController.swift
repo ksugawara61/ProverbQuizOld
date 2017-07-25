@@ -42,5 +42,10 @@ class ResultViewController: UIViewController {
     func backToTop(sender: UIBarButtonItem) {
         self.navigationController?.popToRootViewController(animated: true)
     }
+    
+    @IBAction func back() {
+        //self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+    }
 
 }
