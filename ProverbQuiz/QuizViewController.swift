@@ -31,6 +31,7 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
 
         setUpQuiz()
     }
@@ -39,7 +40,7 @@ class QuizViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+        
     // シャッフルするアルゴリズム(フィッシャー&イェーツ・アルゴリズム)
     func shuffle(array: [Dictionary<String, String>]) -> [Dictionary<String, String>] {
         var tmpArray = array
