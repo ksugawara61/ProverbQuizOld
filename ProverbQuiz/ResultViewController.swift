@@ -27,7 +27,6 @@ class ResultViewController: UIViewController {
         let newBackButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(ResultViewController.backToTop(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
 
-        print(status)
         authorImageView.image = UIImage(named: imageName)
         proverbTextView.text = proverb
         authorLabel.text = author
@@ -45,7 +44,8 @@ class ResultViewController: UIViewController {
     
     @IBAction func back() {
         //self.dismiss(animated: true, completion: nil)
-        self.navigationController?.popViewController(animated: true)
+        //self.navigationController?.popViewController(animated: true)
+        self.performSegue(withIdentifier: "toNext", sender: nil)
     }
 
 }

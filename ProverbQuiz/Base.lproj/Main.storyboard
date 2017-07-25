@@ -246,11 +246,12 @@
                         <outlet property="authorLabel" destination="GpC-lT-y6X" id="F7j-xH-mmZ"/>
                         <outlet property="proverbTextView" destination="oD5-Lf-Wz3" id="HEz-0K-yyL"/>
                         <outlet property="resultLavel" destination="Itt-Vf-LCa" id="xxP-se-ode"/>
+                        <segue destination="gam-WX-1ED" kind="show" identifier="toNext" id="uAq-lR-nEe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6N-z3-6LO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2588" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2633" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u9i-dh-bhg">
@@ -274,4 +275,7 @@
     <resources>
         <image name="ni-che.png" width="684" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uAq-lR-nEe"/>
+    </inferredMetricsTieBreakers>
 </document>
