@@ -42,6 +42,7 @@
 		9318E3D11F2082FB0083632B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D01F2082FB0083632B /* QuizViewController.swift */; };
 		9318E3D31F2083100083632B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D21F2083100083632B /* ResultViewController.swift */; };
 		9318E3D51F208AAE0083632B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318E3D41F208AAE0083632B /* Quiz.swift */; };
+		93B4765C1F2781430089253B /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4765B1F2781430089253B /* EndViewController.swift */; };
 		93E5EC771F26E0D700F7E008 /* alfred_adler.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */; };
 		93E5EC781F26E0D700F7E008 /* aristoteles.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC6F1F26E0D700F7E008 /* aristoteles.png */; };
 		93E5EC791F26E0D700F7E008 /* einstein.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E5EC701F26E0D700F7E008 /* einstein.png */; };
@@ -92,6 +93,7 @@
 		9318E3D01F2082FB0083632B /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9318E3D21F2083100083632B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		9318E3D41F208AAE0083632B /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		93B4765B1F2781430089253B /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		93E5EC6E1F26E0D700F7E008 /* alfred_adler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_adler.png; sourceTree = "<group>"; };
 		93E5EC6F1F26E0D700F7E008 /* aristoteles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aristoteles.png; sourceTree = "<group>"; };
 		93E5EC701F26E0D700F7E008 /* einstein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = einstein.png; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				9318E3D21F2083100083632B /* ResultViewController.swift */,
 				9318E3D41F208AAE0083632B /* Quiz.swift */,
 				93E5EC861F2735E600F7E008 /* Constant.swift */,
+				93B4765B1F2781430089253B /* EndViewController.swift */,
 			);
 			path = ProverbQuiz;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				9318E3D11F2082FB0083632B /* QuizViewController.swift in Sources */,
 				9318E3D51F208AAE0083632B /* Quiz.swift in Sources */,
 				9318E3881F2077850083632B /* ViewController.swift in Sources */,
+				93B4765C1F2781430089253B /* EndViewController.swift in Sources */,
 				9318E3861F2077850083632B /* AppDelegate.swift in Sources */,
 				9318E3D31F2083100083632B /* ResultViewController.swift in Sources */,
 				93E5EC871F2735E600F7E008 /* Constant.swift in Sources */,

@@ -28,9 +28,7 @@ class ResultViewController: UIViewController {
 
         self.navigationItem.hidesBackButton = true
         if index >= Constant.maxQuizNum {
-            let newBackButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(ResultViewController.backToTop(sender:)))
-            self.navigationItem.leftBarButtonItem = newBackButton
-            nextQuizButton.setTitle("戻る", for: .normal)
+            nextQuizButton.setTitle("結果発表", for: .normal)
         } else {
             nextQuizButton.setTitle("次の問題", for: .normal)
         }
@@ -41,6 +39,14 @@ class ResultViewController: UIViewController {
         authorLabel.text = author
         if (status) {
             resultLavel.text = "正解！"
+            
+            // スコアを加算
+            let userDefaults = UserDefaults.standard
+            var score = userDefaults.integer(forKey: "Score")
+            score = score + 1
+            userDefaults.set(score, forKey: "Score")
+            userDefaults.synchronize()
+            
         } else {
             resultLavel.text = "残念..."
             resultLavel.textColor = UIColor.red
@@ -48,23 +54,23 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func nextQuiz() {
-        print(index)
         if index < Constant.maxQuizNum {
             self.performSegue(withIdentifier: "toNext", sender: nil)
         } else {
             // 最終問題であればトップページへ遷移
-            self.navigationController?.popToRootViewController(animated: true)
+            self.performSegue(withIdentifier: "toEnd", sender: nil)
         }
     }
     
-    func backToTop(sender: UIBarButtonItem) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let quizViewController = segue.destination as! QuizViewController
-        quizViewController.index = index
-        quizViewController.quizArray = quizArray
+        if index < Constant.maxQuizNum {
+            let quizViewController = segue.destination as! QuizViewController
+            quizViewController.index = index
+            quizViewController.quizArray = quizArray
+        } else {
+            let endViewController = segue.destination as! EndViewController
+            endViewController.quizArray = quizArray
+        }
     }
 
 }

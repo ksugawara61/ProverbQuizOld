@@ -47,6 +47,11 @@ class ViewController: UIViewController {
             quizArray.append(quiz)
         }
         
+        // スコアを初期化
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(0, forKey: "Score")
+        userDefaults.synchronize()
+        
         // QuizViewControllerへ値渡し
         let quizViewController = segue.destination as! QuizViewController
         quizViewController.index = 0

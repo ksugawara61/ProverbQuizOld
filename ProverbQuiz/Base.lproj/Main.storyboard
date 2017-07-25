@@ -259,11 +259,125 @@
                         <outlet property="proverbTextView" destination="oD5-Lf-Wz3" id="HEz-0K-yyL"/>
                         <outlet property="resultLavel" destination="Itt-Vf-LCa" id="xxP-se-ode"/>
                         <segue destination="gam-WX-1ED" kind="show" identifier="toNext" id="uAq-lR-nEe"/>
+                        <segue destination="mbC-g6-Okx" kind="show" identifier="toEnd" id="uuK-Y7-ohX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6N-z3-6LO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2633" y="139"/>
+            <point key="canvasLocation" x="2632.8000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="Mxj-Xb-N4x">
+            <objects>
+                <viewController id="mbC-g6-Okx" customClass="EndViewController" customModule="ProverbQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fu0-wg-JZJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KgJ-wl-2Mt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ufo-WM-jrV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ni-che.png" translatesAutoresizingMaskIntoConstraints="NO" id="nKJ-aD-FjH">
+                                <rect key="frame" x="67" y="83" width="240" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAC-ug-Vg4">
+                                <rect key="frame" x="57" y="376" width="260" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="足下を掘れ、">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HiraMinProN-W6"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPS-BoldMT"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="そこに泉あり">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HiraMinProN-W6"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB7-nw-Ejt">
+                                <rect key="frame" x="56" y="306" width="81" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="5 / 5">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86o-Gn-lhO">
+                                <rect key="frame" x="126" y="546" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ニーチェ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWL-4d-yo2">
+                                <rect key="frame" x="67" y="595" width="240" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="戻る">
+                                            <attributes>
+                                                <font key="NSFont" size="17" name="HiraMinProN-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="backToTop" destination="mbC-g6-Okx" eventType="touchUpInside" id="Yy4-T2-QNP"/>
+                                    <action selector="nextQuiz" destination="Mgn-tM-GFG" eventType="touchUpInside" id="dZU-kV-U8s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cId-fP-eCF">
+                                <rect key="frame" x="160" y="306" width="171" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="おめでとう！">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="authorImageView" destination="nKJ-aD-FjH" id="3L6-hR-kd2"/>
+                        <outlet property="authorLabel" destination="86o-Gn-lhO" id="UY6-63-ugk"/>
+                        <outlet property="commentLabel" destination="cId-fP-eCF" id="Yex-GJ-Ovc"/>
+                        <outlet property="proverbTextView" destination="wAC-ug-Vg4" id="7hm-NA-hhD"/>
+                        <outlet property="resultLabel" destination="FB7-nw-Ejt" id="PBz-o7-a47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvF-ev-vQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3493.5999999999999" y="138.98050974512745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u9i-dh-bhg">
