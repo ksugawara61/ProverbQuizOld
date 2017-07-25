@@ -40,12 +40,25 @@ class QuizViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // シャッフルするアルゴリズム(フィッシャー&イェーツ・アルゴリズム)
+    func shuffle(array: [Dictionary<String, String>]) -> [Dictionary<String, String>] {
+        var tmpArray = array
+        var shuffledArray: [Dictionary<String, String>] = []
+        for _ in 0..<tmpArray.count {
+            let index = Int(arc4random_uniform(UInt32(tmpArray.count)))
+            shuffledArray.append(tmpArray[index])
+            tmpArray.remove(at: index)
+        }
+        return shuffledArray
+    }
+
     // クイズの初期設定
     func setUpQuiz() {
-        quiz = Quiz(option1: authors[0],
-                    option2: authors[1],
-                    option3: authors[2],
-                    answer: authors[1])
+        let shuffledAuthors = shuffle(array: authors)
+        quiz = Quiz(option1: shuffledAuthors[0],
+                    option2: shuffledAuthors[1],
+                    option3: shuffledAuthors[2],
+                    answer: shuffledAuthors[Int(arc4random_uniform(3))])
         
         quizTextView.text = quiz.answer["proverb"]
         option1Button.setTitle(quiz.option1["name"], for: .normal)

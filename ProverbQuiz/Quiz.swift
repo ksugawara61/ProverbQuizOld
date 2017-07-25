@@ -25,16 +25,4 @@ class Quiz: NSObject {
         self.answer = answer
     }
     
-    // シャッフルするアルゴリズム(フィッシャー&イェーツ・アルゴリズム)
-    class func shuffle(quizArray: [Quiz]) -> [Quiz] {
-        var quiz = quizArray
-        var shuffledQuizArray: [Quiz] = []
-        for _ in 0..<quiz.count {
-            let index = Int(arc4random_uniform(UInt32(quiz.count)))
-            shuffledQuizArray.append(quiz[index])
-            quiz.remove(at: index)
-        }
-        return shuffledQuizArray
-    }
-
 }
