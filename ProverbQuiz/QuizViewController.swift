@@ -26,6 +26,7 @@ class QuizViewController: UIViewController {
                    ["name": "アインシュタイン", "image": "einstein", "proverb": "天才とは努力する凡才のことである。"],
                    ["name": "ヘレン・ケラー", "image": "helen_keller", "proverb": "人生はどちらかです。勇気をもって挑むか、棒にふるか。"]]
 
+    @IBOutlet var quizLabel:     UILabel!
     @IBOutlet var quizTextView:  UITextView!
     @IBOutlet var option1Button: UIButton!
     @IBOutlet var option2Button: UIButton!
@@ -46,27 +47,10 @@ class QuizViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // シャッフルするアルゴリズム(フィッシャー&イェーツ・アルゴリズム)
-    func shuffle(array: [Dictionary<String, String>]) -> [Dictionary<String, String>] {
-        var tmpArray = array
-        var shuffledArray: [Dictionary<String, String>] = []
-        for _ in 0..<tmpArray.count {
-            let index = Int(arc4random_uniform(UInt32(tmpArray.count)))
-            shuffledArray.append(tmpArray[index])
-            tmpArray.remove(at: index)
-        }
-        return shuffledArray
-    }
-
     // クイズの初期設定
     func setUpQuiz() {
-        /*let shuffledAuthors = shuffle(array: authors)
-        quiz = Quiz(option1: shuffledAuthors[0],
-                    option2: shuffledAuthors[1],
-                    option3: shuffledAuthors[2],
-                    answer: shuffledAuthors[Int(arc4random_uniform(3))])*/
         quiz = quizArray[index]
-        
+        quizLabel.text = "問 " + String(index + 1)
         quizTextView.text = quiz.answer["proverb"]
         option1Button.setTitle(quiz.option1["name"], for: .normal)
         option1Button.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)

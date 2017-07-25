@@ -140,6 +140,19 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7p-HK-feh">
+                                <rect key="frame" x="166" y="69" width="42" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="問 1">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.87542372729999995" green="0.87542372729999995" blue="0.87542372729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -149,6 +162,7 @@
                         <outlet property="option1Button" destination="mRe-7x-3zS" id="enT-uU-tPx"/>
                         <outlet property="option2Button" destination="Hvc-RK-2eW" id="53B-Wd-KBc"/>
                         <outlet property="option3Button" destination="9L6-LV-lsk" id="vvx-eg-hAb"/>
+                        <outlet property="quizLabel" destination="o7p-HK-feh" id="Ud0-yR-3gR"/>
                         <outlet property="quizTextView" destination="gKq-xa-SUH" id="zG0-fY-Y4P"/>
                         <segue destination="Mgn-tM-GFG" kind="show" identifier="toDetail" id="FbB-i6-8ng"/>
                     </connections>
