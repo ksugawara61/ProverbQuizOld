@@ -32,7 +32,7 @@ class ResultViewController: UIViewController {
         } else {
             nextQuizButton.setTitle("次の問題", for: .normal)
         }
-        nextQuizButton.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)
+        nextQuizButton.titleLabel!.font = UIFont(name: "HiraMinProN-W6", size: 18)
 
         authorImageView.image = UIImage(named: imageName)
         proverbTextView.text = proverb

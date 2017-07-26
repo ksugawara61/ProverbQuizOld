@@ -42,11 +42,11 @@ class QuizViewController: UIViewController {
         quizLabel.text = "問 " + String(index + 1)
         quizTextView.text = quiz.answer["proverb"]
         option1Button.setTitle(quiz.option1["name"], for: .normal)
-        option1Button.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)
+        option1Button.titleLabel!.font = UIFont(name: "HiraMinProN-W6", size: 18)
         option2Button.setTitle(quiz.option2["name"], for: .normal)
-        option2Button.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)
+        option2Button.titleLabel!.font = UIFont(name: "HiraMinProN-W6", size: 18)
         option3Button.setTitle(quiz.option3["name"], for: .normal)
-        option3Button.titleLabel!.font = UIFont(name: "TimesNewRomanPS-BoldMT", size: 18)
+        option3Button.titleLabel!.font = UIFont(name: "HiraMinProN-W6", size: 18)
     }
     
     @IBAction func selectOption1() {
