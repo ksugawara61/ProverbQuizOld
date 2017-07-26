@@ -15,17 +15,6 @@ class QuizViewController: UIViewController {
     var quiz:   Quiz!
     var status: Bool!
     
-    var authors = [["name": "ニーチェ", "image": "ni-che", "proverb": "自分を破壊する一歩手前の負荷が、自分を強くしてくれる。"],
-                   ["name": "アリストテレス", "image": "aristoteles", "proverb": "我々の性格は、我々の行動の結果なり。"],
-                   ["name": "プラトン", "image": "platon", "proverb": "自分に打ち勝つことが、最も偉大な勝利である。"],
-                   ["name": "アドラー", "image": "alfred_adler", "proverb": "もっとも重要な問いは「どこから」ではなくて「どこへ」である。"],
-                   ["name": "始皇帝", "image": "shikoutei", "proverb": "天下が戦に苦しむのは、諸侯があるからだ。"],
-                   ["name": "徳川家康", "image": "ieyasu", "proverb": "戦いでは強い者が勝つ。辛抱の強い者が。"],
-                   ["name": "諸葛亮", "image": "koumei", "proverb": "無欲でなければ志は立たず、穏やかでなければ道は遠い。"],
-                   ["name": "ガンジー", "image": "gandhi", "proverb": "速度を上げるばかりが、人生ではない。"],
-                   ["name": "アインシュタイン", "image": "einstein", "proverb": "天才とは努力する凡才のことである。"],
-                   ["name": "ヘレン・ケラー", "image": "helen_keller", "proverb": "人生はどちらかです。勇気をもって挑むか、棒にふるか。"]]
-
     @IBOutlet var quizLabel:     UILabel!
     @IBOutlet var quizTextView:  UITextView!
     @IBOutlet var option1Button: UIButton!
